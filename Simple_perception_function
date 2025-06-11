@@ -1,0 +1,16 @@
+# simple perceptron function
+def perceptron(a1, a2, w0, w1, w2):
+    # net sum, ynet
+    ynet = w0+a1*w1+a2*w2
+    print(f'ynet = {ynet}')
+    if ynet<0:
+        print('negative weight')
+    else:
+        print('positive weight')
+
+a1 = int(input("a1: "))
+a2 = int(input("a2: "))
+w0 = int(input("w0: "))
+w1 = int(input("w1: "))
+w2 = int(input("w2: "))
+perceptron(a1, a2, w0, w1, w2)
